@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Streams Live Healing Services March 2025</title>
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="css/plyr.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/fa-all.min.css"/>
+	
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	
+	<link rel="icon" href="assets/zone-g-logo-transparent.png">
+
+</head>
+<body class="puffer-page">
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8 offset-m2 center-align">
+
+                <!-- Logo/Brand -->
+                <img src="assets/zone-g-logo-transparent.png" alt="HSLHS Logo" class="responsive-img logo">
+
+                <!-- Plyr Video Player -->
+                <div class="plyr__container">
+                    <video class="js-player" controls>
+                        <source src="assets/hs-2025-promo.mp4" type="video/mp4">
+                        <!-- Fallback for browsers that don't support the video tag -->
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+
+                <!-- Message & Button -->
+                <div id="button-container" x-data="{showButton: false}" x-init="setTimeout(() => showButton = true, 30000)" x-show="showButton" x-transition>
+                    <h5 class="catchy-message" style="color: white;">Ready to experience divine healing?</h5>
+                    <a href="advertorial.html" class="waves-effect waves-light btn btn-large deep-purple lighten-1"><i class="fas fa-heartbeat left"></i> Discover More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Alpine.js -->
+    <script src="js/alpine.min.js" defer></script>
+
+    <!-- Plyr JavaScript -->
+    <script src="js/plyr.polyfilled.js"></script>
+
+    <!-- Materialize JavaScript -->
+    <script src="js/materialize.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+:root {
+  --primary: #7C3AED;
+  --primary-light: #A78BFA;
+  --secondary: #EC4899;
+  --accent: #0EA5E9;
+  --dark: #1F2937;
+  --light: #F9FAFB;
+  --gradient-start: #7C3AED;
+  --gradient-end: #EC4899;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  color: var(--dark);
+  background-color: #f8fafc;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: -4rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Info Card */
+.info-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.card-header {
+  margin-bottom: 2rem;
+}
+
+.accent-line {
+  height: 4px;
+  width: 60px;
+  background: var(--primary);
+  margin: 1rem 0;
+}
+
+.featured-text {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(236, 72, 153, 0.1));
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Expect Section */
+.expect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.expect-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.expect-card:hover {
+  transform: translateY(-5px);
+}
+
+.expect-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.quote-icon {
+  font-size: 4rem;
+  color: var(--primary);
+  /*opacity: 0.2;*/
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+/* Registration Section */
+.registration-section {
+  margin: 4rem 0;
+}
+
+.registration-card {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.register-button {
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  color: var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+}
+
+.register-button i {
+  margin-left: 0.5rem;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section {
+    padding: 4rem 1rem;
+  }
+  
+  .main-content {
+    margin-top: -2rem;
+  }
+  
+  .expect-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer Styles */
+.site-footer {
+    background: white;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+}
+
+.copyright {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 100px;
+    }
+    
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
